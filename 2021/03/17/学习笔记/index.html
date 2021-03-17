@@ -8,11 +8,11 @@
     <meta name="baidu-site-verification" content="5EmnBCPDrY" />
     
 
-    <title>Archives - Y1inf</title>
+    <title>学习笔记 - Y1inf</title>
 
     <meta property="og:url" content="git://Y1inf-jf.github.io">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Archives - Y1inf | Y1inf">
+    <meta property="og:title" content="学习笔记 - Y1inf | Y1inf">
     
     
 
@@ -244,11 +244,11 @@
 <header>
     <div class="mdui-card-media" style="overflow: hidden;">
         
-        <img src="https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/main/img1.jpg" class="header-box mdui-img-fluid" draggable="false">
+        <img src="" class="header-box blur mdui-img-fluid" onerror="{this.src='https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/main/img1.jpg'}" draggable="false">
         
             <div class="header-content">
                 
-                <span class="header_title">Y1inf</span></br>
+                <span class="header_title">学习笔记</span></br>
                 
                 <p id="hitokoto">一言加载中...</p>
             </div>
@@ -257,45 +257,99 @@
 </header>
 <body>
   <div class="mdui-center" id="content-inner" style="width:95%; max-width:700pt;">
-    <!-- 归档列表 -->
+    <!--博文详细内容-->
 
- <!--归档列表 -->
-<div class="mdui-center post-content">
-  <h1>归档</h1>
-  <div class="mdui-panel" mdui-panel="{accordion : true}">
-    
-          <div class="mdui-panel-item">
-            <div class="mdui-panel-item-header">
-              <div class="mdui-panel-item-title" id="2021">2021</div>
-              <div class="mdui-panel-item-summary">共3篇</div>
-              <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+<link rel="stylesheet" href="/css/post.css">
+
+<div>
+  <div class="">
+    <article class="article-content mdui-container mdui-center mdui-shadow-12">
+      <p>学习笔记！<br>—    #安装Nodejs<br>node -v    #查看node版本<br>npm -v    #查看npm版本<br>npm install -g cnpm –registry=<a target="_blank" rel="noopener" href="http://registry.npm.taobao.org/">http://registry.npm.taobao.org</a>    #安装淘宝的cnpm 管理器<br>cnpm -v    #查看cnpm版本<br>cnpm install -g hexo-cli    #安装hexo框架<br>hexo -v    #查看hexo版本<br>mkdir blog    #创建blog目录<br>cd blog     #进入blog目录<br>sudo hexo init     #生成博客 初始化博客<br>hexo s    #启动本地博客服务<br><a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a>    #本地访问地址<br>hexo n “我的第一篇文章” #创建新的文章<br>#返回blog目录<br>hexo clean #清理<br>hexo g #生成<br>#Github创建一个新的仓库 YourGithubName.github.io<br>cnpm install –save hexo-deployer-git #在blog目录下安装git部署插件</p>
+<hr>
+<h2 id="配置-config-yml"><a href="#配置-config-yml" class="headerlink" title="#配置_config.yml "></a>#配置_config.yml </h2><pre><code># Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+      type: git
+     repo: https://github.com/YourGithubName/YourGithubName.github.io.git
+      branch: master
+</code></pre>
+<hr>
+<p>hexo d    #部署到Github仓库里<br><a target="_blank" rel="noopener" href="https://yourgithubname.github.io/">https://YourGithubName.github.io/</a>  #访问这个地址可以查看博客</p>
+<p> git clone <a target="_blank" rel="noopener" href="https://github.com/litten/hexo-theme-yilia.git">https://github.com/litten/hexo-theme-yilia.git</a> themes/yilia  #下载yilia主题到本地</p>
+<p>#修改hexo根目录下的 _config.yml 文件 ： theme: yilia</p>
+<p>hexo c    #清理一下<br>hexo g    #生成<br>hexo d    #部署到远程Github仓库<br><a target="_blank" rel="noopener" href="https://yourgithubname.github.io/">https://YourGithubName.github.io/</a>  #查看博客</p>
+
+      
+    <div class="mdui-container">
+        <button class="mdui-center mdui-color-pink mdui-btn-icon mdui-btn mdui-btn-raised mdui-ripple"
+            mdui-dialog="{target: '#reward-dialog'}">赏</button>
+        <div class="mdui-dialog" id="reward-dialog">
+            <div class="reward-title">写博客不易，请我喝杯咖啡？ </div>
+            <div class="mdui-divider"></div>
+            <div class="mdui-tab mdui-tab-full-width" id="reward-tab">
+                <a href="#reward-alipay" class="mdui-ripple">支付宝</a>
+                <a href="#reward-wechat" class="mdui-ripple">微信</a>
             </div>
-            <div class="mdui-panel-item-body mdui-typo">
-                
-                  <span class="mdui-panel-item-summary post-time">
-                    03-17
-                  </span>
-                  <a class="mdui-panel-item-summary post-name" href="/2021/03/17/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a>
-                <hr>
-                
-                  <span class="mdui-panel-item-summary post-time">
-                    03-16
-                  </span>
-                  <a class="mdui-panel-item-summary post-name" href="/2021/03/16/mercy/">mercy</a>
-                <hr>
-                
-                  <span class="mdui-panel-item-summary post-time">
-                    03-12
-                  </span>
-                  <a class="mdui-panel-item-summary post-name" href="/2021/03/12/hello-world/">Y1inf</a>
-                <hr>
-                
+            <div id="reward-alipay">
+                <img src="https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/main/alipay.jpg" class="mdui-center noclick">
             </div>
-          </div>
-    
+            <div id="reward-wechat">
+                <img src="https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/main/wechat.jpg" class="mdui-center noclick">
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var tab = new mdui.Tab('#reward-tab');
+        mdui.JQ('#reward-dialog').on('open.mdui.dialog', function () {
+        tab.handleUpdate();
+        });
+    </script>
+
+
+    </article>
+    <div class="article-content mdui-container mdui-center mdui-shadow-12">
+      
+
+
+	<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+	<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.13.0/js/md5.min.js"></script>
+
+    <div class="mdui-center">
+        <div class="mdui-center">
+            <article class="mdui-typo">
+                <h2>评论</h2>
+                <div id="gitalk-container"></div>
+            </article>
+        </div>
+    </div>
+
+  	<script type="text/javascript">
+		const gitalk = new Gitalk({
+			clientID: 'ecbf6316c9aa7a6bfd7a',
+			clientSecret: '5c875e5986ed75f4509d97acd16628b97f7506f1',
+			repo: 'tonychenn.github.io',
+			owner: 'tonychenn',
+			admin: ['tonychenn'],
+			id: md5(window.location.pathname),      // Ensure uniqueness and length less than 50 ，so use md5
+			distractionFreeMode: true  // Facebook-like distraction free mode
+		})
+		gitalk.render('gitalk-container')
+	</script>
+
+
+
+    </div>
   </div>
+
+
+  <!-- <aside id="sidebar" class="mdui-shadow-2 mdui-hoverable">
+    <div class="widget">
+      <h3 class="title">目录</h3>
+      <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E9%85%8D%E7%BD%AE-config-yml"><span class="post-toc-text">#配置_config.yml </span></a></li></ol> 
+    </div>
+  </aside> -->
 </div>
-</br></br></br>
   </div>
   <!--footer-->
   <footer class="mdui-color-indigo">
